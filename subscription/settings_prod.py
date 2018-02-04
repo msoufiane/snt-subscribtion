@@ -1,5 +1,5 @@
 from subscription.settings_common import *
-import dj_database_url
+# import dj_database_url
 import os
 
 
@@ -10,27 +10,18 @@ DEBUG = True
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
-    'optin',
+
     'optout',
-    # 'django.contrib.sessions',
-    # 'django.contrib.messages',
-    # 'django.contrib.auth',
+    'optin',
 
-    # 'rest_framework',
-    # 'corsheaders',
-    # 'knox',
-
-    # 'authentication',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    # 'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -41,4 +32,11 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
+
+CORS_ORIGIN_WHITELIST = (
+    'google.com',
+    'hostname.example.com',
+    'localhost:8000',
+    '127.0.0.1:9000'
+)

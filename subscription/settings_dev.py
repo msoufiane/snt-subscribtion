@@ -4,23 +4,13 @@ from subscription.settings_common import *
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
-    'optin',
     'optout',
-    # 'django.contrib.sessions',
-    # 'django.contrib.messages',
-    # 'django.contrib.auth',
-
-    # 'rest_framework',
-    # 'corsheaders',
-    # 'knox',
-
-    # 'authentication',
+    'optin',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     # 'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     # 'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -37,3 +27,4 @@ DATABASES = {
         'NAME': 'db.sqlite3',
     }
 }
+
