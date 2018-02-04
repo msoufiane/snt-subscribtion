@@ -1,9 +1,11 @@
 import os
 from datetime import timedelta
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
+    'django.contrib.staticfiles',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.auth',
@@ -39,6 +41,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 WSGI_APPLICATION = 'subscription.wsgi.application'
 ROOT_URLCONF = 'subscription.urls'
 LANGUAGE_CODE = 'en-us'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
