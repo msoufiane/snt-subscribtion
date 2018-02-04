@@ -2,32 +2,8 @@ import os
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'DJANGO_SECRET_KEY_NOT_FOUND')
-
-INSTALLED_APPS = [
-    'django.contrib.contenttypes',
-    'django.contrib.staticfiles',
-    # 'django.contrib.sessions',
-    # 'django.contrib.messages',
-    # 'django.contrib.auth',
-
-    # 'rest_framework',
-    # 'corsheaders',
-    # 'knox',
-
-    # 'authentication',
-]
-
-MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    # 'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    # 'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
 
 # AUTH_PASSWORD_VALIDATORS = [
 #     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', },
