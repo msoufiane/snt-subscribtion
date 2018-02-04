@@ -3,6 +3,7 @@ from subscription.settings.common import *
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     # 'django.contrib.sessions',
     # 'django.contrib.messages',
@@ -17,6 +18,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     # 'django.contrib.sessions.middleware.SessionMiddleware',
     # 'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
