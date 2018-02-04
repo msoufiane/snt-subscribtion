@@ -24,7 +24,7 @@ SECRET_KEY = 'lib+zv6f4696ipi=b07ilc#%an4@d_)n)3+)(pazru@(zq(i$t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blooming-brook-55071.herokuapp.com', 'subcription.sentad.com']
 
 
 # Application definition
