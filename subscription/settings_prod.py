@@ -10,6 +10,8 @@ DEBUG = True
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
+    'optin',
+    'optout',
     # 'django.contrib.sessions',
     # 'django.contrib.messages',
     # 'django.contrib.auth',
