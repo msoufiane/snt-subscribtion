@@ -1,4 +1,4 @@
-from subscription.settings.common import *
+from subscription.settings_common import *
 
 
 INSTALLED_APPS = [

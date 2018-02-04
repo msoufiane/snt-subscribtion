@@ -1,4 +1,4 @@
-from subscription.settings.common import *
+from subscription.settings_common import *
 import dj_database_url
 import os
 
@@ -61,7 +61,7 @@ TEMPLATES = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'settings/static'),
+    os.path.join(PROJECT_ROOT, 'static'),
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
