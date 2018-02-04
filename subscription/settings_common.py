@@ -1,16 +1,8 @@
 import os
 
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'DJANGO_SECRET_KEY_NOT_FOUND')
-
-# AUTH_PASSWORD_VALIDATORS = [
-#     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', },
-#     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', },
-#     {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator', },
-#     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator', },
-# ]
 
 
 # CORS_ORIGIN_ALLOW_ALL = True
