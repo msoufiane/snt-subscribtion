@@ -37,8 +37,7 @@ MIDDLEWARE = [
 # ]
 
 
-CORS_ORIGIN_ALLOW_ALL = True
-# AUTH_USER_MODEL = 'authentication.Account'
+# CORS_ORIGIN_ALLOW_ALL = True
 WSGI_APPLICATION = 'subscription.wsgi.application'
 ROOT_URLCONF = 'subscription.urls'
 LANGUAGE_CODE = 'en-us'
