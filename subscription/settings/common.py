@@ -1,7 +1,6 @@
 import os
 from datetime import timedelta
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'DJANGO_SECRET_KEY_NOT_FOUND')
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',

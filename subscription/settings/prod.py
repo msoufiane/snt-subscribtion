@@ -2,6 +2,7 @@ from subscription.settings.common import *
 import os
 
 
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'DJANGO_SECRET_KEY_NOT_FOUND')
 ALLOWED_HOSTS = ['subscription.sentad.com']
 DEBUG = False
 
